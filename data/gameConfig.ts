@@ -42,8 +42,10 @@ const musicalTasks: GameConfig["categories"][0]["tasks"] = [
  * Добавление: новый объект в массив { imageSrc, correctAnswer }.
  */
 const igorRebusImages = [
-  { imageSrc: "/rebus/вархамер.png", correctAnswer: "Вархамер (мок)" },
-  { imageSrc: "/rebus/усы.png", correctAnswer: "Усы (мок)" },
+  { imageSrc: "/rebus/1_усики.png", correctAnswer: "Усики" },
+  { imageSrc: "/rebus/2_сигареты.png", correctAnswer: "Сигареты" },
+  { imageSrc: "/rebus/3_варкрафт.jpg", correctAnswer: "Варкрафт" },
+  { imageSrc: "/rebus/4_стюарт_литл.png", correctAnswer: "Стюарт Литл" },
 ];
 
 const igorTasks: GameConfig["categories"][1]["tasks"] = [
@@ -62,14 +64,14 @@ const igorTasks: GameConfig["categories"][1]["tasks"] = [
   {
     type: "rebus_image",
     title: "Ребус",
-    imageSrc: igorRebusImages[0]!.imageSrc,
-    correctAnswer: igorRebusImages[0]!.correctAnswer,
+    imageSrc: igorRebusImages[2]!.imageSrc,
+    correctAnswer: igorRebusImages[2]!.correctAnswer,
   },
   {
     type: "rebus_image",
     title: "Ребус",
-    imageSrc: igorRebusImages[1]!.imageSrc,
-    correctAnswer: igorRebusImages[1]!.correctAnswer,
+    imageSrc: igorRebusImages[3]!.imageSrc,
+    correctAnswer: igorRebusImages[3]!.correctAnswer,
   },
 ];
 
