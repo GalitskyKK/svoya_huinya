@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "СВОЯ ХУЙНЯ",
-  description: "Однопользовательская викторина 18+",
+  description: "Какая-то хуйня 18+ (не для детей)",
 };
 
 export default function RootLayout({
