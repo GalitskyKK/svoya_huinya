@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --board-bg: #0f1729;
+  --board-cell: #1e3a5f;
+  --board-cell-hover: #2a4a7a;
+  --board-cell-played: #0d1520;
+  --accent: #3b82f6;
+}
+
+body {
+  background-color: var(--board-bg);
+  color: #fff;
+}
+
+@keyframes taskOverlayIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-task-overlay {
+  animation: taskOverlayIn 0.25s ease-out forwards;
+}
