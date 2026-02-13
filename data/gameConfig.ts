@@ -77,11 +77,11 @@ const igorTasks: GameConfig["categories"][1]["tasks"] = [
  * КУЛ СТОРИИ — эмодзи-ребусы. Добавление: новый объект в массив.
  */
 const coolStoriesRebuses = [
-  { emoji: ["🤽‍♂️", "🥡", "👺"], correctAnswer: "Появление клички Пакет" },
-  { emoji: ["⛺️", "🥃", "🏐", "🌞"], correctAnswer: "Напиклё Макарчику" },
   { emoji: ["🥃", "🧻", "🤮", "х5"], correctAnswer: "Богдан покакаль" },
-  { emoji: ["🦟", "🎛", "🪱", "🤜🤛"], correctAnswer: "Набитие ебал Глисту за заю" },
-];
+  { emoji: ["🏐", "🛍️", "👺"], correctAnswer: "Появление клички Пакет" },
+  { emoji: ["⛺️", "🥃", "🏐", "🌞"], correctAnswer: "Напиклё Макарчику" },
+  { emoji: ["🦟", "🎛", "🪱", "🤜🤛"], correctAnswer: "Набитие ебал Глисту за заю" }
+]
 
 const coolStoriesTasks: GameConfig["categories"][2]["tasks"] = coolStoriesRebuses.map(
   (r) => ({
@@ -91,6 +91,37 @@ const coolStoriesTasks: GameConfig["categories"][2]["tasks"] = coolStoriesRebuse
     correctAnswer: r.correctAnswer,
   })
 ) as GameConfig["categories"][2]["tasks"];
+
+/**
+ * COCKтейльная: картинки из public/coctail_img/.
+ * Задания — Классика #1, #2 и Экспери(кре)менты #3, #4.
+ */
+const cocktailTasks: GameConfig["categories"][3]["tasks"] = [
+  {
+    type: "rebus_image",
+    title: "Классика #1",
+    imageSrc: "/coctail_img/1_cock.jpg",
+    correctAnswer: "Классика 1",
+  },
+  {
+    type: "rebus_image",
+    title: "Классика #2",
+    imageSrc: "/coctail_img/2_cock.jpg",
+    correctAnswer: "Классика 2",
+  },
+  {
+    type: "rebus_image",
+    title: "Экспери(кре)менты #3",
+    imageSrc: "/coctail_img/3_cock.jpg",
+    correctAnswer: "Эксперименты 3",
+  },
+  {
+    type: "rebus_image",
+    title: "Экспери(кре)менты #4",
+    imageSrc: "/coctail_img/4_cock.jpg",
+    correctAnswer: "Эксперименты 4",
+  },
+];
 
 export const gameConfig: GameConfig = {
   categories: [
@@ -111,6 +142,12 @@ export const gameConfig: GameConfig = {
       name: "КУЛ СТОРИИ",
       costLabels: ["3 см", "7 см", "12 см", "не померил"],
       tasks: coolStoriesTasks,
+    },
+    {
+      id: "cocktail",
+      name: "COCKтейльная",
+      costLabels: ["один стакан", "два стакана", "три стакана", "уже не помню"],
+      tasks: cocktailTasks,
     },
   ],
 };

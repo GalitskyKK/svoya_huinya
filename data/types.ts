@@ -27,7 +27,7 @@ export type RebusEmojiTask = {
 
 export type Task = MusicTask | RebusImageTask | RebusEmojiTask;
 
-export type CategoryId = "musical" | "igors" | "cool_stories";
+export type CategoryId = "musical" | "igors" | "cool_stories" | "cocktail";
 
 export type CostLabels = [string, string, string, string];
 

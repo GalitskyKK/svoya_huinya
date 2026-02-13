@@ -24,7 +24,7 @@ export type GameState = {
   showTaskContent: boolean;
 };
 
-const TOTAL_CELLS = 3 * 4;
+const TOTAL_CELLS = gameConfig.categories.length * 4;
 const SCORE_PER_SLOT = [100, 200, 300, 400];
 
 function cellKey(categoryIndex: number, slotIndex: number): string {

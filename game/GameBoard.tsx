@@ -27,7 +27,7 @@ export function GameBoard() {
         className="flex-1 grid gap-2 md:gap-3 min-h-0"
         style={{
           gridTemplateColumns: "minmax(160px, 1.2fr) repeat(4, minmax(0, 1fr))",
-          gridTemplateRows: "repeat(3, 1fr)",
+          gridTemplateRows: `repeat(${categories.length}, 1fr)`,
         }}
       >
         {categories.map((cat, catIndex) => (
