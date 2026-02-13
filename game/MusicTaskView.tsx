@@ -57,9 +57,13 @@ export function MusicTaskView({ task }: MusicTaskViewProps) {
           </p>
         )}
 
-        {(!isBlitz && task.audioSrc) && (
+        {(task.audioSrc || (isBlitz && hasTracks && task.blitzTracks?.[0]?.audioSrc)) && (
           <div className="flex flex-col items-center gap-3">
-            <audio ref={audioRef} src={task.audioSrc} preload="metadata" />
+            <audio
+              ref={audioRef}
+              src={task.audioSrc || task.blitzTracks?.[0]?.audioSrc}
+              preload="metadata"
+            />
             <button
               type="button"
               onClick={handlePlay}

@@ -31,9 +31,9 @@ const musicalTasks: GameConfig["categories"][0]["tasks"] = [
   {
     type: "blitz",
     title: "Блиц",
-    audioSrc: "",
-    correctAnswer: "",
-    blitzTracks: [],
+    audioSrc: "/audio/4-blitz.mp3",
+    correctAnswer: "Блиц",
+    blitzTracks: [{ audioSrc: "/audio/4-blitz.mp3", correctAnswer: "Блиц" }],
   },
 ];
 
