@@ -139,7 +139,7 @@ export const gameConfig: GameConfig = {
     },
     {
       id: "cool_stories",
-      name: "КУЛ СТОРИИ",
+      name: "КАЛ СТОРИИ",
       costLabels: ["3 см", "7 см", "12 см", "не померил"],
       tasks: coolStoriesTasks,
     },
