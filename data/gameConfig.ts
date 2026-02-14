@@ -13,29 +13,29 @@ const musicalTasks: GameConfig["categories"][0]["tasks"] = [
     type: "meme",
     title: "Мемная",
     audioSrc: "/audio/1-meme.mp3",
-    correctAnswer: "А может просто негром стать",
+    correctAnswer: "А может просто негром стать"
   },
   {
     type: "meme",
     title: "Мемная",
     audioSrc: "/audio/2-meme.mp3",
-    correctAnswer: "Казанова (Говновоз)",
-  },
-  {
-    type: "splice",
-    title: "Склейка",
-    audioSrc: "/audio/3-splice.mp3",
-    correctAnswer: "В Питере — пить",
-    correctAnswerSecondary: "Валерий Меладзе / Ленинград",
+    correctAnswer: "Казанова"
   },
   {
     type: "blitz",
     title: "Блиц",
     audioSrc: "/audio/4-blitz.mp3",
     correctAnswer: "Блиц",
-    blitzTracks: [{ audioSrc: "/audio/4-blitz.mp3", correctAnswer: "Блиц" }],
+    blitzTracks: [{ audioSrc: "/audio/4-blitz.mp3", correctAnswer: "Блиц" }]
   },
-];
+  {
+    type: "splice",
+    title: "Склейка",
+    audioSrc: "/audio/3-splice.mp3",
+    correctAnswer: "3 сентября / Охотник / В Питере - пить",
+    correctAnswerSecondary: ""
+  }
+]
 
 /**
  * Ребусы «ХУЙНЯ от Игоря»: картинки из public/rebus/.
@@ -103,13 +103,13 @@ const cocktailTasks: GameConfig["categories"][3]["tasks"] = [
     type: "rebus_image",
     title: "Классика #1",
     imageSrc: "/coctail_img/1_cock.jpg",
-    correctAnswer: "Классика 1",
+    correctAnswer: "Мимоза",
   },
   {
     type: "rebus_image",
     title: "Классика #2",
     imageSrc: "/coctail_img/2_cock.jpg",
-    correctAnswer: "Классика 2",
+    correctAnswer: "Секс на пляже",
   },
   {
     type: "rebus_image",
